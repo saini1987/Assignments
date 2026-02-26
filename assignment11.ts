@@ -13,7 +13,7 @@
 class DiamondPyramid {
     printDiamondPyramid(rows: number): void {
 
-        // Upper half
+        // print Upper half part of diamond
         for (let i = 1; i <= rows; i++) {
             let line = "";
 
@@ -30,7 +30,7 @@ class DiamondPyramid {
             console.log(line);
         }
 
-        // Lower half
+        // print Lower half part of diamond
         for (let i = rows - 1; i >= 1; i--) {
             let line = "";
 
