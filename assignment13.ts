@@ -13,10 +13,10 @@ export class PalindromeService {
             throw new Error("Input cannot be empty");
         }
 
-        const normalized = value.toLowerCase().replace(/[^A-Za-z0-9]/g, "");
+        const palidromeString = value.toLowerCase().replace(/[^A-Za-z0-9]/g, "");
 
-        for (let i = 0; i < normalized.length / 2; i++) {
-            if (normalized[i] !== normalized[normalized.length - 1 - i]) {
+        for (let i = 0; i < palidromeString.length / 2; i++) {
+            if (palidromeString[i] !== palidromeString[palidromeString.length - 1 - i]) {
                 return false;
             }
         }
